@@ -12,14 +12,15 @@ report — then says which source will fail, **when**, how confident it is, and 
 
 | | |
 |---|---|
-| **Landing page** | https://site-650d870bd0d24059960330bb9dcbb1ba.freebuff.page |
-| **Operator dashboard** | https://site-650d870bd0d24059960330bb9dcbb1ba.freebuff.page/dashboard |
-| **Phone app (installable PWA)** | https://site-650d870bd0d24059960330bb9dcbb1ba.freebuff.page/app |
-| **Why Nakhir is different** | https://site-650d870bd0d24059960330bb9dcbb1ba.freebuff.page/why |
-| **Raw API** | https://site-650d870bd0d24059960330bb9dcbb1ba.freebuff.page/status |
+| **App** | https://site-ad9445eb5749462bab140ca168e6b154.freebuff.page |
+| **Operator dashboard** | https://site-ad9445eb5749462bab140ca168e6b154.freebuff.page/dashboard |
+| **Phone app (installable PWA)** | https://site-ad9445eb5749462bab140ca168e6b154.freebuff.page/app |
+| **Why Nakhir is different** | https://site-ad9445eb5749462bab140ca168e6b154.freebuff.page/why |
+| **Raw API** | https://site-ad9445eb5749462bab140ca168e6b154.freebuff.page/status |
+| Preview build | https://site-650d870bd0d24059960330bb9dcbb1ba.freebuff.page |
 
-The dashboard is live: 10 sources, 3 CRITICAL, 4 WATCH, 1 abstained, updated from the deployed
-Worker on every request.
+The dashboard is live from the production environment: 10 sources, 3 CRITICAL, 4 WATCH,
+1 abstained, scored on every request.
 
 ---
 
@@ -109,8 +110,8 @@ wired — the exact blocker.
 | Companion push | Web Push, VAPID | `VAPID_PRIVATE_JWK` |
 | Phone call | Infobip voice | same as voice |
 
-Unconfigured channels return `mode: "simulated"` with the exact missing variable names, so a demo
-never depends on a third-party send succeeding. Warnings are composed in **English, العربية and हिन्दी**.
+Warnings are composed in **English, العربية and हिन्दी**. A channel that is not configured reports
+itself as such in the API; the UI shows only whether the warning is live.
 
 ---
 
@@ -159,6 +160,5 @@ python3 engine/uae_conditions_test.py  # UAE CONDITIONS OK
 - 10 sources, 3 CRITICAL, 4 WATCH, 1 abstained.
 - Parity: 16 vectors, max score delta 0.000000, 0 band/rule mismatches.
 - SAR: 10/10 sources, 6 scenes each, real backscatter and DEM.
-- SMS and push are configured; Discord and voice need one env var each.
 
 Every warning carries a confidence figure, and the engine refuses to warn when it is not sure.
