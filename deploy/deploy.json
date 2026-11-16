@@ -1,0 +1,10 @@
+{
+  "entrypoint": "worker.js",
+  "compatibilityDate": "2026-11-01",
+  "modules": [
+    { "name": "worker.js", "type": "esm", "path": "./worker.js" },
+    { "name": "water-core.js", "type": "esm", "path": "./water-core.js" },
+    { "name": "push.js", "type": "esm", "path": "./push.js" }
+  ],
+  "assetsDirectory": "./public"
+}

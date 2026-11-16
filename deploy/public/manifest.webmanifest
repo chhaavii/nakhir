@@ -1,0 +1,22 @@
+{
+  "name": "Nakhir — نذير",
+  "short_name": "Nakhir",
+  "description": "Early warning for desert water sources in the UAE.",
+  "start_url": "/app",
+  "scope": "/",
+  "display": "standalone",
+  "orientation": "portrait",
+  "background_color": "#0d0b09",
+  "theme_color": "#0d0b09",
+  "lang": "en",
+  "dir": "ltr",
+  "categories": ["utilities", "weather", "productivity"],
+  "icons": [
+    { "src": "/icon.svg", "sizes": "any", "type": "image/svg+xml", "purpose": "any" },
+    { "src": "/icon.svg", "sizes": "any", "type": "image/svg+xml", "purpose": "maskable" }
+  ],
+  "shortcuts": [
+    { "name": "Sources", "url": "/app#sources" },
+    { "name": "Alerts", "url": "/app#alerts" }
+  ]
+}
