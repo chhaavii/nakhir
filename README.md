@@ -12,12 +12,9 @@ report — then says which source will fail, **when**, how confident it is, and 
 
 | | |
 |---|---|
-| **App** | https://site-ad9445eb5749462bab140ca168e6b154.freebuff.page |
-| **Operator dashboard** | https://site-ad9445eb5749462bab140ca168e6b154.freebuff.page/dashboard |
+| **dashboard** | https://site-ad9445eb5749462bab140ca168e6b154.freebuff.page |
 | **Phone app (installable PWA)** | https://site-ad9445eb5749462bab140ca168e6b154.freebuff.page/app |
-| **Why Nakhir is different** | https://site-ad9445eb5749462bab140ca168e6b154.freebuff.page/why |
-| **Raw API** | https://site-ad9445eb5749462bab140ca168e6b154.freebuff.page/status |
-| Preview build | https://site-650d870bd0d24059960330bb9dcbb1ba.freebuff.page |
+
 
 The dashboard is live from the production environment: 10 sources, 3 CRITICAL, 4 WATCH,
 1 abstained, scored on every request.
